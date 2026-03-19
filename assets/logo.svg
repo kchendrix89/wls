@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <linearGradient id="wlsg" x1="0" y1="50" x2="100" y2="50" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#7068F0"/>
+      <stop offset="100%" stop-color="#44C5D5"/>
+    </linearGradient>
+    <clipPath id="wlsc">
+      <rect width="100" height="100"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#wlsc)">
+    <line x1="-11" y1="60" x2="60" y2="-11" stroke="url(#wlsg)" stroke-width="8" stroke-linecap="round"/>
+    <line x1="-2"  y1="68" x2="68" y2="-2"  stroke="url(#wlsg)" stroke-width="8" stroke-linecap="round"/>
+    <line x1="6"   y1="77" x2="77" y2="6"   stroke="url(#wlsg)" stroke-width="8" stroke-linecap="round"/>
+    <line x1="15"  y1="85" x2="85" y2="15"  stroke="url(#wlsg)" stroke-width="8" stroke-linecap="round"/>
+    <line x1="23"  y1="94" x2="94" y2="23"  stroke="url(#wlsg)" stroke-width="8" stroke-linecap="round"/>
+    <line x1="32"  y1="102" x2="102" y2="32" stroke="url(#wlsg)" stroke-width="8" stroke-linecap="round"/>
+    <line x1="40"  y1="111" x2="111" y2="40" stroke="url(#wlsg)" stroke-width="8" stroke-linecap="round"/>
+  </g>
+</svg>
