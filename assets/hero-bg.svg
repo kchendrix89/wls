@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 800" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <!-- Stripe gradient: purple left → teal right -->
+    <linearGradient id="hbg-stripe" x1="0" y1="0" x2="1440" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#7068F0"/>
+      <stop offset="100%" stop-color="#44C5D5"/>
+    </linearGradient>
+
+    <!-- Large purple glow at top-center -->
+    <radialGradient id="hbg-glow1" cx="50%" cy="0%" r="60%">
+      <stop offset="0%"   stop-color="#7068F0" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#7068F0" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Soft teal glow upper-right -->
+    <radialGradient id="hbg-glow2" cx="78%" cy="20%" r="32%">
+      <stop offset="0%"   stop-color="#44C5D5" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#44C5D5" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Fine grid pattern -->
+    <pattern id="hbg-grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#44C5D5" stroke-width="0.6"/>
+    </pattern>
+
+    <!-- Bottom fade: blend back into the page bg -->
+    <linearGradient id="hbg-fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="55%"  stop-color="#0D0F1A" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0D0F1A" stop-opacity="1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 1. Base dark background -->
+  <rect width="1440" height="800" fill="#0D0F1A"/>
+
+  <!-- 2. Glows -->
+  <rect width="1440" height="800" fill="url(#hbg-glow1)"/>
+  <rect width="1440" height="800" fill="url(#hbg-glow2)"/>
+
+  <!-- 3. Fine grid (very subtle) -->
+  <rect width="1440" height="800" fill="url(#hbg-grid)" opacity="0.045"/>
+
+  <!-- 4. Large diagonal stripes (logo motif, scaled up) -->
+  <!-- 12 parallel lines at 45°, stroke-width 90, spacing 185px (perpendicular).
+       Coordinates computed from canvas center (720,400) with half-length 1100. -->
+  <g opacity="0.07" stroke="url(#hbg-stripe)" stroke-width="90" stroke-linecap="round">
+    <line x1="-581" y1="654"  x2="974"  y2="-901"/>
+    <line x1="-450" y1="785"  x2="1105" y2="-770"/>
+    <line x1="-319" y1="916"  x2="1236" y2="-639"/>
+    <line x1="-189" y1="1047" x2="1367" y2="-508"/>
+    <line x1="-58"  y1="1178" x2="1498" y2="-378"/>
+    <line x1="72"   y1="1308" x2="1628" y2="-247"/>
+    <line x1="203"  y1="1439" x2="1759" y2="-116"/>
+    <line x1="334"  y1="1570" x2="1890" y2="14"/>
+    <line x1="465"  y1="1701" x2="2021" y2="145"/>
+    <line x1="596"  y1="1832" x2="2152" y2="276"/>
+    <line x1="726"  y1="1962" x2="2282" y2="406"/>
+    <line x1="857"  y1="2093" x2="2413" y2="537"/>
+  </g>
+
+  <!-- 5. Bottom fade so the image blends into the page -->
+  <rect width="1440" height="800" fill="url(#hbg-fade)"/>
+</svg>
