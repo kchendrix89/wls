@@ -1,6 +1,6 @@
 import React from "react";
-import { interpolate, spring, useCurrentFrame, useVideoConfig } from "remotion";
-import { loadFont } from "@remotion/google-fonts/Inter";
+import { interpolate, spring, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
+import { loadFont } from "@remotion/fonts";
 import {
   ACCENT,
   BG,
@@ -11,10 +11,11 @@ import {
   TEXT,
 } from "../constants";
 
-const { fontFamily } = loadFont("normal", {
-  weights: ["400", "600", "800"],
-  subsets: ["latin"],
-});
+const fontFamily = "LiberationSans";
+Promise.all([
+  loadFont({ family: fontFamily, url: staticFile("LiberationSans-Regular.ttf"), weight: "400" }),
+  loadFont({ family: fontFamily, url: staticFile("LiberationSans-Bold.ttf"), weight: "700" }),
+]);
 
 interface Props {
   children: React.ReactNode;
@@ -97,7 +98,7 @@ export const SceneLayout: React.FC<Props> = ({
             opacity: headlineSpr,
             transform: `translateY(${headlineY}px)`,
             fontSize: 58,
-            fontWeight: 800,
+            fontWeight: 700,
             color: TEXT,
             lineHeight: 1.2,
             marginBottom: 20,

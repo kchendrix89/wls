@@ -62,7 +62,7 @@ export const Scene2: React.FC = () => {
               <rect x={-60} y={-40} width={120} height={80} rx={16} fill={CARD_BG} stroke={`${ACCENT}55`} strokeWidth={1.5} />
               {/* Icon (as text) */}
               <text x={0} y={-4} textAnchor="middle" fontSize={28}>{icon}</text>
-              <text x={0} y={28} textAnchor="middle" fill={MUTED} fontSize={20} fontFamily="Inter, sans-serif" fontWeight={600}>{label}</text>
+              <text x={0} y={28} textAnchor="middle" fill={MUTED} fontSize={20} fontFamily="LiberationSans, sans-serif" fontWeight={700}>{label}</text>
             </g>
           );
         })}
@@ -95,8 +95,8 @@ export const Scene2: React.FC = () => {
           strokeDashoffset={brainDash}
         />
         {/* "LLM" label */}
-        <text x={480} y={350} textAnchor="middle" fill={TEXT} fontSize={32} fontFamily="Inter, sans-serif" fontWeight={800} opacity={brainDraw}>LLM</text>
-        <text x={480} y={385} textAnchor="middle" fill={MUTED} fontSize={20} fontFamily="Inter, sans-serif" fontWeight={400} opacity={brainDraw}>Brain</text>
+        <text x={480} y={350} textAnchor="middle" fill={TEXT} fontSize={32} fontFamily="LiberationSans, sans-serif" fontWeight={700} opacity={brainDraw}>LLM</text>
+        <text x={480} y={385} textAnchor="middle" fill={MUTED} fontSize={20} fontFamily="LiberationSans, sans-serif" fontWeight={400} opacity={brainDraw}>Brain</text>
 
         {/* Animated particles orbiting brain */}
         {Array.from({ length: numParticles }, (_, i) => {
@@ -133,12 +133,12 @@ export const Scene2: React.FC = () => {
             stroke={`#22c55e`}
             strokeWidth={2.5}
           />
-          <text y={-82} textAnchor="middle" fill={MUTED} fontSize={18} fontFamily="Inter, sans-serif">Decide</text>
+          <text y={-82} textAnchor="middle" fill={MUTED} fontSize={18} fontFamily="LiberationSans, sans-serif">Decide</text>
           {/* Yes / No branches */}
           <line x1={0} y1={70} x2={-55} y2={130} stroke={`#22c55e`} strokeWidth={2} opacity={decSpr} />
           <line x1={0} y1={70} x2={55} y2={130} stroke={`#ef4444`} strokeWidth={2} opacity={decSpr} />
-          <text x={-62} y={150} textAnchor="middle" fill={"#22c55e"} fontSize={18} fontFamily="Inter, sans-serif" fontWeight={600} opacity={decSpr}>Yes</text>
-          <text x={62} y={150} textAnchor="middle" fill={"#ef4444"} fontSize={18} fontFamily="Inter, sans-serif" fontWeight={600} opacity={decSpr}>No</text>
+          <text x={-62} y={150} textAnchor="middle" fill={"#22c55e"} fontSize={18} fontFamily="LiberationSans, sans-serif" fontWeight={700} opacity={decSpr}>Yes</text>
+          <text x={62} y={150} textAnchor="middle" fill={"#ef4444"} fontSize={18} fontFamily="LiberationSans, sans-serif" fontWeight={700} opacity={decSpr}>No</text>
         </g>
       </svg>
     </SceneLayout>

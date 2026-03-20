@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "@remotion/cli": "4",
+    "@remotion/fonts": "^4.0.438",
     "@remotion/google-fonts": "4",
     "@remotion/media": "4",
     "@remotion/transitions": "4",

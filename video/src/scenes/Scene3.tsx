@@ -47,8 +47,8 @@ export const Scene3: React.FC = () => {
           opacity={agentSpr}
           transform={`scale(${interpolate(agentSpr,[0,1],[0.3,1])})`}
         />
-        <text x={0} y={-8} textAnchor="middle" fill={TEXT} fontSize={22} fontFamily="Inter, sans-serif" fontWeight={800} opacity={agentSpr}>AI</text>
-        <text x={0} y={20} textAnchor="middle" fill={TEXT} fontSize={22} fontFamily="Inter, sans-serif" fontWeight={800} opacity={agentSpr}>Agent</text>
+        <text x={0} y={-8} textAnchor="middle" fill={TEXT} fontSize={22} fontFamily="LiberationSans, sans-serif" fontWeight={700} opacity={agentSpr}>AI</text>
+        <text x={0} y={20} textAnchor="middle" fill={TEXT} fontSize={22} fontFamily="LiberationSans, sans-serif" fontWeight={700} opacity={agentSpr}>Agent</text>
 
         {/* ── TOOLS ── */}
         {TOOLS.map(({ icon, label, angle }, i) => {
@@ -98,7 +98,7 @@ export const Scene3: React.FC = () => {
               >
                 <circle cx={0} cy={0} r={55} fill={CARD_BG} stroke={`${ACCENT}66`} strokeWidth={1.5} />
                 <text x={0} y={-6} textAnchor="middle" fontSize={28}>{icon}</text>
-                <text x={0} y={22} textAnchor="middle" fill={MUTED} fontSize={16} fontFamily="Inter, sans-serif" fontWeight={600}>{label}</text>
+                <text x={0} y={22} textAnchor="middle" fill={MUTED} fontSize={16} fontFamily="LiberationSans, sans-serif" fontWeight={700}>{label}</text>
               </g>
             </g>
           );

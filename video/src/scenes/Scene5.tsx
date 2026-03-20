@@ -120,7 +120,7 @@ export const Scene5: React.FC = () => {
                 strokeWidth={2.5}
               />
               <text x={0} y={-8} textAnchor="middle" fontSize={32}>{icon}</text>
-              <text x={0} y={24} textAnchor="middle" fill={TEXT} fontSize={20} fontFamily="Inter, sans-serif" fontWeight={700}>{label}</text>
+              <text x={0} y={24} textAnchor="middle" fill={TEXT} fontSize={20} fontFamily="LiberationSans, sans-serif" fontWeight={700}>{label}</text>
             </g>
           );
         })}

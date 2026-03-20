@@ -46,7 +46,7 @@ export const Scene4: React.FC = () => {
       <svg width={960} height={820} viewBox="0 0 960 820">
 
         {/* ── SECTION LABEL: WORKING MEMORY ── */}
-        <text x={480} y={30} textAnchor="middle" fill={MUTED} fontSize={22} fontFamily="Inter, sans-serif" fontWeight={600}>Working Memory</text>
+        <text x={480} y={30} textAnchor="middle" fill={MUTED} fontSize={22} fontFamily="LiberationSans, sans-serif" fontWeight={700}>Working Memory</text>
 
         {/* ── WORK CARDS ── */}
         {WORK_CARDS.map(({ label, icon, delay }, i) => {
@@ -59,7 +59,7 @@ export const Scene4: React.FC = () => {
                 fill={CARD_BG} stroke={`${ACCENT}55`} strokeWidth={1.5}
               />
               <text x={x} y={100} textAnchor="middle" fontSize={32}>{icon}</text>
-              <text x={x} y={135} textAnchor="middle" fill={TEXT} fontSize={19} fontFamily="Inter, sans-serif" fontWeight={600}>{label}</text>
+              <text x={x} y={135} textAnchor="middle" fill={TEXT} fontSize={19} fontFamily="LiberationSans, sans-serif" fontWeight={700}>{label}</text>
             </g>
           );
         })}
@@ -82,7 +82,7 @@ export const Scene4: React.FC = () => {
         </g>
 
         {/* ── SECTION LABEL: PERSISTENT MEMORY ── */}
-        <text x={480} y={450} textAnchor="middle" fill={MUTED} fontSize={22} fontFamily="Inter, sans-serif" fontWeight={600}
+        <text x={480} y={450} textAnchor="middle" fill={MUTED} fontSize={22} fontFamily="LiberationSans, sans-serif" fontWeight={700}
           opacity={funnelSpr}>Persistent Memory</text>
 
         {/* ── MEMORY LAYERS (stacked cylinders) ── */}
@@ -112,7 +112,7 @@ export const Scene4: React.FC = () => {
                 strokeWidth={1.5}
               />
               <text x={480} y={y + h / 2 + 7} textAnchor="middle"
-                fill={TEXT} fontSize={20} fontFamily="Inter, sans-serif" fontWeight={600}
+                fill={TEXT} fontSize={20} fontFamily="LiberationSans, sans-serif" fontWeight={700}
                 opacity={layerOpacity}
               >{label}</text>
             </g>
@@ -124,7 +124,7 @@ export const Scene4: React.FC = () => {
           <g opacity={recallOpacity}>
             <line x1={820} y1={760} x2={820} y2={480} stroke={GREEN} strokeWidth={2} strokeLinecap="round" strokeDasharray="8 6" />
             <polygon points="808,480 820,455 832,480" fill={GREEN} />
-            <text x={850} y={625} fill={GREEN} fontSize={18} fontFamily="Inter, sans-serif" fontWeight={600}>Recall</text>
+            <text x={850} y={625} fill={GREEN} fontSize={18} fontFamily="LiberationSans, sans-serif" fontWeight={700}>Recall</text>
           </g>
         )}
       </svg>
