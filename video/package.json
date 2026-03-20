@@ -1,0 +1,26 @@
+{
+  "name": "ai-agents-video",
+  "version": "1.0.0",
+  "description": "How AI Agents Work — Educational explainer video",
+  "scripts": {
+    "start": "remotion studio",
+    "build": "remotion render"
+  },
+  "dependencies": {
+    "@remotion/cli": "4",
+    "@remotion/google-fonts": "4",
+    "@remotion/media": "4",
+    "@remotion/transitions": "4",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.18",
+    "@types/react-dom": "18.3.5",
+    "typescript": "5"
+  },
+  "remotion": {
+    "entryPoint": "src/index.ts"
+  }
+}
